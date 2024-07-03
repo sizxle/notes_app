@@ -7,7 +7,7 @@ import { NoteDetailComponent } from './features/notes/components/ui/note-detail/
 const routes: Routes = [
   { path: '', component: NotesListComponent },
   { path: 'new', component: AddNoteComponent },
-  { path: 'note', component: NoteDetailComponent },
+  { path: 'note/:id', component: NoteDetailComponent },
 ];
 
 

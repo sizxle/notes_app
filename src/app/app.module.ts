@@ -17,7 +17,6 @@ import { AppRoutingModule } from './app-routing.module';
   RouterModule,
   AddNoteModule,
   AppRoutingModule,
-  RouterModule
   ],
   bootstrap: [AppComponent]
 })

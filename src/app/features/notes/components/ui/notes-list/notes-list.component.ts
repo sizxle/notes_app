@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Note } from './../../../models/notes';
+import { Component ,inject} from '@angular/core';
 import {NOTES} from '../../../models/notes';
 import { Router } from '@angular/router';
 
@@ -9,4 +10,10 @@ import { Router } from '@angular/router';
 })
 export class NotesListComponent {
  notes = NOTES;
+
+ router =inject(Router);
+
+ openNote(note:Note) {
+  this.router.navigate(["note"],{state:{note:note}});
+ }
 }

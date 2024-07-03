@@ -5,7 +5,7 @@
   <ul class="notes">
     @for(note of notes; track note.id){
     <li>
-      <button >
+      <button (click)="openNote(note)" >
         <span class="note-title">{{ note.title }}</span>
         <span class="note-text">{{ note.text }}</span>
       </button>
